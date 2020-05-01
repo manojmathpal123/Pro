@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extentreports>
+    <configuration>
+        <!-- report theme -->
+        <!-- standard, dark -->
+        <theme>standard</theme>
+    
+        <!-- document encoding -->
+        <!-- defaults to UTF-8 -->
+        <encoding>UTF-8</encoding>
+        
+        <!-- protocol for script and stylesheets -->
+        <!-- defaults to https -->
+        <protocol>https</protocol>
+        
+        <!-- title of the document -->
+        <documentTitle>TIQ 2.0 Test Report</documentTitle>
+        
+        <!-- report name - displayed at top-nav -->
+        <reportName>Automation Test Report</reportName>
+        
+        <!-- location of charts in the test view -->
+        <!-- top, bottom -->
+        <testViewChartLocation>bottom</testViewChartLocation>
+        
+        <!-- custom javascript -->
+        <scripts>
+            <![CDATA[
+                $(document).ready(function() {
+                 	$(".time-totals .panel-name").eq(0).text("Total Test cases");
+	                $(".time-totals .panel-name").eq(1).text("Total Inventories");
+	                $(".charts .panel-name").eq(0).text("Test cases");
+	                $(".charts .panel-name").eq(1).text("Inventories");        
+	                <!-- $(".charts .panel-name").eq(2).text("Tests3"); -->    
+                });                      
+            ]]>
+        </scripts>
+        
+        <!-- custom styles -->
+        <styles>
+            <![CDATA[
+                
+            ]]>
+        </styles>
+    </configuration>
+</extentreports>

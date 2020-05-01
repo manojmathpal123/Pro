@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Practice Suite">
+  <listeners>
+		<listener class-name="Commonpage.Testlisteners" />
+	</listeners>
+	<parameter name="browserType" value="chrome" />
+	<parameter name="appURL" value="https://manageapp-it03.paas-app-east-np.tsl.telus.com/iq/manage" />
+
+	<test name="Admin Tests">
+		<classes>
+			
+			
+			
+			<class name="Managetest.Dashbaordfactoryscript" />
+			<class name="Managetest.MACDactionscript" />
+			
+			
+		</classes>
+	</test>
+     
+ 
+</suite> <!-- Suite -->

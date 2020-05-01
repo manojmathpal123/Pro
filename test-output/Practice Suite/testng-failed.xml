@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Practice Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="appURL" value="https://manageapp-it03.paas-app-east-np.tsl.telus.com/iq/manage"/>
+  <parameter name="browserType" value="chrome"/>
+  <listeners>
+    <listener class-name="Commonpage.Testlisteners"/>
+  </listeners>
+  <test name="Admin Tests(failed)">
+    <classes>
+      <class name="Managetest.MACDactionscript">
+        <methods>
+          <include name="MACDaction"/>
+          <include name="setup"/>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- Managetest.MACDactionscript -->
+      <class name="Managetest.Dashbaordfactoryscript">
+        <methods>
+          <include name="verifydashbaordlink"/>
+          <include name="setup"/>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- Managetest.Dashbaordfactoryscript -->
+    </classes>
+  </test> <!-- Admin Tests(failed) -->
+</suite> <!-- Failed suite [Practice Suite] -->
